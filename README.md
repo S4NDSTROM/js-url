@@ -1,4 +1,7 @@
 # &lt;/salt&gt;
 
-## Home of individual projects w44
+## Home of individual projects
+
+This is just a place holder repository for the individual repositories
+
 
