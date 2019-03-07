@@ -16,7 +16,7 @@ You are allowed to use any techniques that we have used so far in this course. I
 
 If you want to co-operate in pairs and build one part each of a larger application, come talk to us first. Pair programming is not allowed in this exercise, but we might be able to find a solution if you have a really good idea that can be clearly separated into two parts.
 
-Work in a new branch named after yourself and work in this.
+Create a new branch named after yourself and work in this.
 
 __VERY important__: Push your solutions to GitHub on a regular basis. As soon as something works - commit with a descriptive comment and push! Before you go home for the day, push everything you got.
 
