@@ -18,8 +18,9 @@ If you want to co-operate in pairs and build one part each of a larger applicati
 
 Create a new branch named after yourself and work in this.
 
-__VERY important__: Push your solutions to GitHub on a regular basis. As soon as something works - commit with a descriptive comment and push! Before you go home for the day, push everything you got.
+__VERY important__: Push your solutions to GitHub on a regular basis. As soon as you have something new that works - commit with a descriptive comment and push! Before you go home for the day, push everything you got.
 
+__VERY VERY important__: You need to have something to present. It is not acceptable to have a non-working half-measure of an application just because you didn't scope properly. The key to not ending up in this situation is to work agile - take small steps, have something that actually works early in the game.
 
 ### Presentation
-Everyone will get to present their work in front of part of the class. This will take place at 13:00 on Friday.
+Everyone will get to present their work in front of part of the class. This will take place during Friday.
