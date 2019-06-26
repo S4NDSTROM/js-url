@@ -12,7 +12,9 @@ You are supposed to code something on your own. It is OK to find inspiration fro
 
 Remember that you should scope it in a way that you think you can complete this in one day.
 
-You are allowed to use any techniques that we have used so far in this course. If you want to explore something new, talk to us first.
+You are allowed to use any techniques that we have used so far in this course. It is not necessary to build a fullstack application, you may focus on only the frontend or backend. If you want to explore something new, talk to us first.
+
+If your main focus is about the graphical interface, user interaction and UX, we kindly ask you to stay away from Twitter Bootstrap.
 
 If you want to co-operate in pairs and build one part each of a larger application, come talk to us first. Pair programming is not allowed in this exercise, but we might be able to find a solution if you have a really good idea that can be clearly separated into two parts.
 
