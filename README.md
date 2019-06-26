@@ -25,6 +25,6 @@ __VERY important__: Push your solutions to GitHub on a regular basis. As soon as
 __VERY VERY important__: You need to have something to present. It is not acceptable to have a non-working half-measure of an application just because you didn't scope properly. The key to not ending up in this situation is to work agile - take small steps, have something that actually works early in the game.
 
 ### Presentation
-Everyone will get to present their work in front of part of the class. This will take place during Friday.
+Everyone will get to present their work in front of part of the class. This will take place during Friday. You will have 7 minutes each, including 1 minute Q&A!
 
 We are looking forward to see what amazing things you come up with!
