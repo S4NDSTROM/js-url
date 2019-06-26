@@ -24,3 +24,5 @@ __VERY VERY important__: You need to have something to present. It is not accept
 
 ### Presentation
 Everyone will get to present their work in front of part of the class. This will take place during Friday.
+
+We are looking forward to see what amazing things you come up with!
