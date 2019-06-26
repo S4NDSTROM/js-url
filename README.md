@@ -16,7 +16,7 @@ You are allowed to use any techniques that we have used so far in this course. I
 
 If you want to co-operate in pairs and build one part each of a larger application, come talk to us first. Pair programming is not allowed in this exercise, but we might be able to find a solution if you have a really good idea that can be clearly separated into two parts.
 
-Create a new branch named after yourself and work in this.
+Create a new branch named after yourself and work in this. In the event you have a code base or dev environment you want to start out with, you __need__ to check this in before you start.
 
 __VERY important__: Push your solutions to GitHub on a regular basis. As soon as you have something new that works - commit with a descriptive comment and push! Before you go home for the day, push everything you got.
 
