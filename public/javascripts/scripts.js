@@ -5,7 +5,7 @@ window.onload = function () {
   let data = {username: 'example'};
   const submitBtn = document.querySelector('#submit-btn').addEventListener("click", (event) => {
     event.preventDefault()
-    const userInput = document.querySelector('#user-input').value
+    let userInput = document.querySelector('#user-input').value
     console.log(userInput)
     fetch('http://localhost:3000/api/newurl', {
       method: 'POST',
@@ -23,6 +23,7 @@ window.onload = function () {
           }
           // Examine the text in the response
           response.json().then((data) => {
+            document.querySelector('#user-input').value = data;
             console.log(data);
           });
         }
