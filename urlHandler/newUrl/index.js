@@ -14,10 +14,6 @@ function validator() {
 
 }
 
-// function generateNewUrl() {
-//   return domainName + generateId()
-// }
-
 function generateId() {
   const date = new Date();
   let base = date.getTime();
@@ -32,7 +28,6 @@ function writeDb(orgUrl, id) {
   
     dbData.push({ url: orgUrl, id: id })
     
-
     fs.writeFile('./db/db.json', JSON.stringify(dbData), () =>
     console.log('File appended successfully')
     )

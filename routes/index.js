@@ -1,5 +1,6 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
+const getUrl = require('../urlHandler/getUrl/index')
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -7,7 +8,11 @@ router.get('/', function(req, res, next) {
 });
 router.get('/:id', function(req, res, next) {
   console.log('req.params: ', req.params.id);
-  res.redirect('http://www.hackertyper.com');
+  
+let redirectUrl = getUrl.getUrl()
+console.log(redirectUrl);
+  
+  res.redirect(redirectUrl);
 });
 
 module.exports = router;
