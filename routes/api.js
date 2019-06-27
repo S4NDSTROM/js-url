@@ -10,7 +10,7 @@ router.get('/', function (req, res, next) {
 
 router.post ('/newurl', (req, res, next) => {
   console.log('req.body: ', req.body);
-  const newUrl = apiService.urlService()
+  const newUrl = apiService.urlService(req.body)
   res.setHeader('Content-Type', 'application/json');
   res.end(JSON.stringify(newUrl));
   //res.send('')

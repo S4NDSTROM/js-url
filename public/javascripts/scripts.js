@@ -21,7 +21,6 @@ window.onload = function () {
               response.status);
             return;
           }
-
           // Examine the text in the response
           response.json().then((data) => {
             console.log(data);
