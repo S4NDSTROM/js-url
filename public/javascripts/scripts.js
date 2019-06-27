@@ -6,7 +6,6 @@ window.onload = function () {
   const submitBtn = document.querySelector('#submit-btn').addEventListener("click", (event) => {
     event.preventDefault()
     let userInput = document.querySelector('#user-input').value
-    console.log(userInput)
     fetch('http://localhost:3000/api/newurl', {
       method: 'POST',
             headers: {
