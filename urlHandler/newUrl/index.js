@@ -1,7 +1,6 @@
 const domainName = 'localhost:3000/';
 function urlService(orgUrl) {
   console.log('req.body, but inside urlService: ', orgUrl);
-  // console.log('gen id: ', generateNewUrl() );
   
   return generateNewUrl();
   

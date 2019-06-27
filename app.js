@@ -21,6 +21,7 @@ app.use(bodyParser.json());
 
 
 app.use(logger('dev'));
+// ask lars whats appropriate?
 //app.use(express.json());
 //app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
