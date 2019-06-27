@@ -23,7 +23,6 @@ window.onload = function () {
           // Examine the text in the response
           response.json().then((data) => {
             document.querySelector('#user-input').value = data;
-            console.log(data);
           });
         }
       )

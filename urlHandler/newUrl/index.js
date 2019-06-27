@@ -1,16 +1,23 @@
 const fs = require('fs');
-const dbPath = '../db/db.json';
+const urlRegex = /((([A-Za-z]{3,9}:(?:\/\/)?)(?:[\-;:&=\+\$,\w]+@)?[A-Za-z0-9\.\-]+|(?:www\.|[\-;:&=\+\$,\w]+@)[A-Za-z0-9\.\-]+)((?:\/[\+~%\/\.\w\-_]*)?\??(?:[\-\+=&;%@\.\w_]*)#?(?:[\.\!\/\\\w]*))?)/
+
+
 const domainName = 'localhost:3000/';
 
-function urlService(orgUrl) {
-  console.log('req.body, but inside urlService: ', orgUrl);
-  let newId = generateId();
-  writeDb(orgUrl.userInput, newId)
-
-  return 'localhost:3000/' + newId;
-
+function validator(url) {
+  console.log('f url', url)
+  if (!urlRegex.test(url)) {
+    return 'Invalid Url'
+  }
+  url = url.replace(/(^\w+:|^)\/\//, '');
+  url = 'http://' + url;
+  return urlService(url)
 }
-function validator() {
+function urlService(orgUrl) {
+  let newId = generateId();
+  writeDb(orgUrl, newId)
+
+  return domainName + newId;
 
 }
 
@@ -34,28 +41,4 @@ function writeDb(orgUrl, id) {
 });
 }
 
-
-
-// function readDb(url){
-
-// fs.readFile('./db/db.json', (err, data) => {
-//     if (err) {
-//         if (err) {
-//         console.error(err);
-//         return;
-//     };
-//     console.log('the file has been read successfully')
-//     console.log('just about to cal callback', data);  
-//     }
-//     processFile(data, url);        
-// });
-// }
-
-// function processFile(data, url) {
-//   let dbContent = JSON.parse(data);
-//   let temp = dbContent.filter(function(row){ return row.url === url });
-//     console.log('whatevs', temp);
-//     console.log('processing file...', dbContent);
-// }
-
-module.exports.urlService = urlService;
+module.exports.validator = validator;
