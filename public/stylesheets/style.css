@@ -10,7 +10,8 @@ a {
 
 input[type=text] {
   font-size: 30px;
-  width: 500px;
+  width: 70%;
+  min-width: 100px;
   height: 30px;
   border: 2px solid black;
   border-radius: 4px;

@@ -8,7 +8,6 @@ router.get('/', function (req, res, next) {
 });
 
 router.post ('/newurl', (req, res, next) => {
-  console.log('req.body: ', req.body);
   const newUrl = apiService.validator(req.body.userInput)
   res.setHeader('Content-Type', 'application/json');
   res.end(JSON.stringify(newUrl));

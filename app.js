@@ -11,19 +11,15 @@ const usersRouter = require('./routes/api');
 
 const app = express();
 
-// set the view engine to use handlebars
+
 hbs.registerPartials(path.join(__dirname, '/views/partials'));
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, '/views'));
-// support parsing of application/json type post data
 app.use(bodyParser.json());
 
 
 
 app.use(logger('dev'));
-// ask lars whats appropriate?
-//app.use(express.json());
-//app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 

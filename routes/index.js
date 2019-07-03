@@ -4,9 +4,11 @@ const getUrl = require('../urlHandler/getUrl/index')
 
 
 router.get('/', function (req, res, next) {
-  res.render('index', { title: 'Handlebars with Express 4' });
+  console.log('inside slash')
+  res.render('index', { title: 'Short URLs' });
 });
 router.get('/:id', async function (req, res, next) {
+  console.log('inside slash:id')
   let link = await getUrl.getUrl(req.params.id)
   res.redirect(link);
 });

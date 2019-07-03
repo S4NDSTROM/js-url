@@ -5,7 +5,6 @@ const urlRegex = /((([A-Za-z]{3,9}:(?:\/\/)?)(?:[\-;:&=\+\$,\w]+@)?[A-Za-z0-9\.\
 const domainName = 'localhost:3000/';
 
 function validator(url) {
-  console.log('f url', url)
   if (!urlRegex.test(url)) {
     return 'Invalid Url'
   }
